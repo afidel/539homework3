@@ -1,0 +1,91 @@
+/* Code is uploaded your GitHub account under the folder: homework3 */
+
+body{
+  /* Quicksand font (you will need to use a Google Fonts link) with sans-serif fallback */
+  /* Page background should use the provided image as a non-repeating background, with a fallback color of light grey (#dddddd) */
+  font-family: 'Quicksand', sans-serif;
+  background-image: url("../images/pidgeon-background.jpg");
+  background-color: #dddddd;
+}
+h1{
+  /* Header 1 should be 2em, each line should be 1.5 height, and dark red (#c12258) */
+  color: #c12258;
+  font-size: 2em;
+  line-height: 1.5;
+}
+p{
+  /* Paragraphs should be “black”, 18px, with 15px of padding on the top only */
+  color: black;
+  font-size: 18px;
+  padding-top: 15px;
+}
+table{
+  /* Table has 2px black border (make sure you format parameters as ‘px, weight, color’ order) */
+  /* Outside corners of the table are rounded with 10px radius (you need extra code to make sure only the *outside* borders are rounded, not all of the cells) */
+  /* Table should have only exterior rounded corners */
+  border: 2px solid black;
+  border-radius: 10px;
+  border-spacing: 0; /*this gets rid of the horizontal spaces between the cells*/
+}
+th, td {
+  /* Table cells have centered text with a 2px black border on only one side.  */
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+.colhead {
+  /* Column headers are always at least 150px wide, with 10px of padding. Column header text is white, centered, and uppercase with a dark red background (#7e0830). */
+  /* Row headers have a 2px black border that matches the rest of the rows. */
+  width: 150px;
+  padding: 10px;
+  color: white;
+  background-color: #7e0830;
+  border-bottom: 2px solid black;
+}
+table tr:first-child .colhead:first-child {
+  /* Table should have only exterior rounded corners */
+  border-top-left-radius: 10px;
+}
+table tr:first-child .colhead:last-child {
+  /* Table should have only exterior rounded corners */
+  border-top-right-radius: 10px;
+}
+table tr:last-child .rowhead {
+  /* Table should have only exterior rounded corners */
+  border-bottom-left-radius: 10px;
+}
+table tr:last-child td:last-child {
+  /* Table should have only exterior rounded corners */
+  border-bottom-right-radius: 10px;
+}
+tr:nth-child(even){
+  /* Every even numbered table row has a grey background (#dddddd), every add table row has a transparent background. */
+  background-color: #dddddd;
+}
+tr:hover {
+  /* Hovering over a row changes the background color to light red (#fab9cf). */
+  background-color:#fab9cf;
+}
+a{
+  /* Links should be 18px, dark red (#c12258), with an underline */
+  color: #c12258;
+  font-size: 18px;
+  text-decoration: underline;
+}
+a:focus{
+  /* Focused elements should have a 1px “red” border (make sure you format parameters as ‘px, weight, color’ order) */
+  border: 1px solid red;
+}
+footer {
+  background-color: black;
+  min-height: 60px;
+  position: absolute;
+  bottom:0;
+  width:100%;
+  /* Footer has “white” text on a “black” background */
+  /* Is always located at the bottom of the browser window, no matter how small the page content is. (this may take more than one line of code) */
+  /* Footer is always at least 60px tall. */
+}
+footer p {
+  text-align: center;
+  color: white;
+}
